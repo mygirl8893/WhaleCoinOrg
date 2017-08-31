@@ -71,11 +71,48 @@
                           <a href="https://rocketchat.whalecoin.org" class="btn btn-lg btn-subscribe dark-btn" role="button">Rocket Chat</a>
                         </div>
                     </div>
-
                 </div>
             </div>
+
         	<div class="row footer">
                 <div class="col-sm-12">
+                    <h2>MINING BEGINS IN...</h2>
+                    <h2 id="countdown"></h2>
+                    <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Sep 4, 2017 13:0:0").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get todays date and time
+                        var now = new Date().getTime();
+                        
+                        // Find the distance between now an the count down date
+                        var distance = countDownDate - now;
+                        
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        
+                        // Output the result in an element with id="demo"
+                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+                        
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("countdown").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                    </script>
+                    <br>
+                    <h2 class="wow fadeInDown">A decentralized social network where Whales reward their followers.</h2>
+                    <br> <br>
+                    <p class="wow fadeInDown">Do good work and get rewarded.</p>
+                    <br>
                     <div class="social-icons wow fadeInDown" data-wow-delay="1s">
                         <a href="https://www.reddit.com/r/WhaleCoinOrg/"><i class="fa fa-reddit-square"></i></a>
                         <a href="https://twitter.com/whalecoinorg"><i class="fa fa-twitter-square"></i></a>
