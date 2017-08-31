@@ -246,7 +246,8 @@ input[type="color"]:focus,
     right:0;
     margin-left:auto;
     margin-right:auto;
-	top:520px;
+	top:545px;
+	text-align:center;
 }
 
 .social-icons{
@@ -283,4 +284,31 @@ input[type="color"]:focus,
 		margin:0px auto;
 	}
 
+}
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #7C7B78;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #7C7B78;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
 }
