@@ -50,6 +50,7 @@
         </div>
     </div>
     <div class="waves">
+    <br>
         <div id="wave1" class="wave1 stage"></div>
         <div id="wave2" class="wave2 stage"></div>
         <div id="wave3" class="wave3 stage"></div>
@@ -62,61 +63,125 @@
                 <div class="col-sm-12">
                 	<div class="whale">
                         <h2 class="wow fadeInDown">WhaleCoin</h2>
+                        <h4 class="wow fadeInDown">A decentralized social network where Whales reward their followers.</h4>
                         <div class="wow fadeInUp whaleimg" data-wow-delay="0.7s">
                         	<img src="images/whale.png" alt="whale" >
                         </div>
                         <div class="scribe">
                           <br>
-                          <a href="https://whalecoin.org/whitepaper.pdf" class="btn btn-lg btn-subscribe dark-btn" role="button">WhitePaper</a>
-                          <a href="https://rocketchat.whalecoin.org" class="btn btn-lg btn-subscribe dark-btn" role="button">Rocket Chat</a>
+                          <a target="_blank" href="https://whalecoin.org/whitepaper.pdf" class="btn btn-lg btn-subscribe dark-btn" role="button">WhitePaper</a>
+                          <a target="_blank" href="https://blog.whalecoin.org/" class="btn btn-lg btn-subscribe dark-btn" role="button">Blog</a>
+                          <a target="_blank" href="https://rocketchat.whalecoin.org" class="btn btn-lg btn-subscribe dark-btn" role="button">Rocket Chat</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-        	<div class="row footer">
-                <div class="col-sm-12">
-                    <h2>MINING BEGINS IN...</h2>
-                    <h2 id="countdown"></h2>
-                    <script>
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("Sep 4, 2017 13:0:0").getTime();
-
-                    // Update the count down every 1 second
-                    var x = setInterval(function() {
-
-                        // Get todays date and time
-                        var now = new Date().getTime();
-                        
-                        // Find the distance between now an the count down date
-                        var distance = countDownDate - now;
-                        
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        
-                        // Output the result in an element with id="demo"
-                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
-                        
-                        // If the count down is over, write some text 
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("countdown").innerHTML = "EXPIRED";
-                        }
-                    }, 1000);
-                    </script>
+        	<div class="footer row">
+                <div class="row">
+                    <div class="col-sm-12">
                     <br>
-                    <h2 class="wow fadeInDown">A decentralized social network where Whales reward their followers.</h2>
-                    <br> <br>
+                        <div class="whale"><h3>MINING BEGINS IN...</h3>
+                        <h3 id="countdown"></h3>
+                            <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Sep 4, 2017 13:0:0").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+
+                                // Get todays date and time
+                                var now = new Date().getTime();
+                                
+                                // Find the distance between now an the count down date
+                                var distance = countDownDate - now;
+                                
+                                // Time calculations for days, hours, minutes and seconds
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                                // Output the result in an element with id="demo"
+                                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                                + minutes + "m " + seconds + "s ";
+                                
+                                // If the count down is over, write some text 
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("countdown").innerHTML = "EXPIRED";}}, 1000);
+                            </script>
+                            <br>
+                         <a target="_blank" href="https://blog.whalecoin.org/whale-coin-mining-faq-7c987b64269a" class="btn btn-lg btn-subscribe dark-btn" role="button">Mining FAQ</a>
+                            <br><br><br><br>
+                            <hr>
+                        <h3 class="wow fadeInDown">Meet the Team</h3>
+                        <hr>
+                            <br><br><br>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/parth.jpeg" class="img-thumbnail" alt="Placeholder image">
+                        <div class="whale">
+                            <h4>Parth Oberoi</h4>
+                            <p>grabBlocks, GSoC2015, DoSelect, PESIT ISE</p>
+                                    <div class="social-icons">
+                                        <a target="_blank" href="https://twitter.com/_htrap">
+                                            <i class="fa fa-twitter-square">
+                                            </i>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/htrap">
+                                            <i class="fa fa-github-square">
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/rhett.jpg" class="img-thumbnail" alt="Responsive image">
+                        <div class="whale">
+                            <h4>Rhett Creighton</h4>
+                            <p>Bitcoin Core Contributor, Zclassic, MyCurioCards, MIT BS/MS</p>
+                                    <div class="social-icons">
+                                        <a target="_blank" href="https://twitter.com/HeyRhett">
+                                            <i class="fa fa-twitter-square">
+                                            </i>
+                                        </a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/heyrhett/">
+                                            <i class="fa fa-linkedin-square">
+                                            </i>
+                                        </a>
+                                    </div>
+                        </div>
+                    </div>          
+                    <div class="col-sm-4">
+                        <img src="images/amber.jpg" class="img-thumbnail" alt="Placeholder image">
+                        <div class="whale">
+                            <h4>Amber Hancock</h4>
+                            <p>Oakland Zoo, Instructables, Other Machine, GA UXD</p>
+                                    <div class="social-icons">
+                                        <a target="_blank" href="https://twitter.com/amberrayh">
+                                            <i class="fa fa-twitter-square">
+                                            </i>
+                                        </a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/amberhancock/">
+                                            <i class="fa fa-linkedin-square">
+                                            </i>
+                                        </a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                    <br><br><br>
+                    <div class="whale">
                     <p class="wow fadeInDown">Do good work and get rewarded.</p>
-                    <br>
+                    </div>
                     <div class="social-icons wow fadeInDown" data-wow-delay="1s">
-                        <a href="https://www.reddit.com/r/WhaleCoinOrg/"><i class="fa fa-reddit-square"></i></a>
-                        <a href="https://twitter.com/whalecoinorg"><i class="fa fa-twitter-square"></i></a>
-                        <a href="https://github.com/whalecoinorg"><i class="fa fa-github-square"></i></a>
+                        <a target="_blank" href="https://www.reddit.com/r/WhaleCoinOrg/"><i class="fa fa-reddit-square"></i></a>
+                        <a target="_blank" href="https://twitter.com/whalecoinorg"><i class="fa fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://github.com/whalecoinorg"><i class="fa fa-github-square"></i></a>
                     </div>
                     <div class="copyrights wow fadeIn" data-wow-delay="1.2s"><p>©  2017 Chain Starter, Inc. - All Rights Reserved.</p></div>
                 </div>

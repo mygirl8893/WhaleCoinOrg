@@ -140,6 +140,26 @@ body{
 
 /* Whale & Text */
 
+.header{
+	font-family: 'Ubuntu', sans-serif;
+	text-align:right;
+	color:#fff;
+	margin-right: 30px
+
+}
+
+.header h2{
+	font-size:50px;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-top:50px;
+}
+
+.header h4{
+	font-size:18px;
+	font-weight: 100;
+}
+
 .whale{
 	font-family: 'Ubuntu', sans-serif;
 	text-align:center;
@@ -248,6 +268,8 @@ input[type="color"]:focus,
     margin-right:auto;
 	top:545px;
 	text-align:center;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .social-icons{
@@ -275,6 +297,10 @@ input[type="color"]:focus,
 	color:#fff;
 }
 
+.img-thumbnail {
+	max-height: 250px;
+	max-width: 250px;
+}
 /* Responsive Changes */
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
