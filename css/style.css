@@ -183,7 +183,7 @@ body{
 	position:absolute;
     left:0;
     right:0;
-	top:250px;
+	top:200px;
     margin-left:auto;
     margin-right:auto;
 	z-index:8;
@@ -206,10 +206,32 @@ body{
 }
 
 /* Search Bar */
+.container-fluid{
+	padding-left: 0px;
+	padding-bottom: 6px;
+}
 
-.navbar-form{
+.navbar-form {
 	border:none;
 	box-shadow:none;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 6px;
+}
+
+.navbar-form .btn{
+	border: none;
+	line-height: 22px;
+	padding-top: 6px;
+	padding-right:13px;
+	padding-bottom:6px;
+	padding-left: 13px;
+	color: #fff;
+	margin-left: 3px!important;
+}
+
+.navbar-form .btn:hover{
+	background: #ea606e;
 }
 
 .whale .input-group{
@@ -337,4 +359,8 @@ input[type="color"]:focus,
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
+}
+
+a {
+  color:inherit;
 }
