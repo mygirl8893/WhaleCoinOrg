@@ -942,6 +942,7 @@ a:focus {
 }
 .testimonials {
     background: url("rect3422.png") no-repeat center;
+    background-size: cover;
 }
 #testi-carousel {
     padding: 50px 0px 50px 0px;
