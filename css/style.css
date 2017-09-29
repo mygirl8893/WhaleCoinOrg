@@ -319,6 +319,7 @@ button:focus {
 .carousel-section {
     background: url("image10.png") no-repeat center;
     padding: 180px 0px;
+    background-size: cover;
 }
 .carousel-inner {
     position: relative;
